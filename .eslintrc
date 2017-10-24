@@ -1,0 +1,22 @@
+{
+  "root": true,
+  "extends":[
+    "airbnb",
+    "prettier"
+  ],
+  "plugins": [
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "tabWidth": 2,
+        "trailingComma": "es5",
+        "printWidth": 100
+      }
+    ],
+    "no-param-reassign": "off",
+    "no-sequences": "off"
+  }
+}
