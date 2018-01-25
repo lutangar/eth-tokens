@@ -1,4 +1,5 @@
 import fetch from "isomorphic-fetch";
+import { getChecksumAddress } from "ethjs-account";
 
 export default () =>
   fetch("https://raw.githubusercontent.com/ExodusMovement/ethereum-tokens/master/assets.json", {
@@ -15,7 +16,10 @@ export default () =>
     })
     .then(({ json, response }) => {
       if (response.ok) {
-        return json;
+        return json.map(token => ({
+          ...token,
+          address: getChecksumAddress(token.contractAddress),
+        }));
       }
 
       return [];

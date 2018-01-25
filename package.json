@@ -8,7 +8,6 @@
     "prettier": "prettier-eslint --write --list-different \"@(src|test)/**/*.js\" \"example/src/**/*.js\"",
     "fix": "eslint --fix \"@(src|test)/**/*.js\"",
     "lint": "eslint --ext js src test"
-
   },
   "repository": {
     "type": "git",
@@ -45,6 +44,7 @@
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-prettier": "^2.1.2",
     "eslint-plugin-react": "^7.2.0",
+    "ethjs-account": "^0.1.4",
     "isomorphic-fetch": "^2.2.1",
     "jsonfile": "^4.0.0",
     "mocha": "^3.5.0",
